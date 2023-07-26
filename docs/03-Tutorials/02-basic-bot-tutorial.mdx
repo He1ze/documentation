@@ -77,7 +77,7 @@ information. While there are many legitimate use cases for _just_ having a non-c
 will instead require a `GatewayDiscordClient`.
 
 To obtain a `GatewayDiscordClient`, we will use the `withGateway` method of `DiscordClient`. This method allows us to
-say the bot should do when it logs in. We can use the method like so:
+say what the bot should do when it logs in. We can use the method like so:
 
 ```java
 Mono<Void> login = client.withGateway((GatewayDiscordClient gateway) -> Mono.empty());
